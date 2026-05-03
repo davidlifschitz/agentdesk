@@ -1,0 +1,26 @@
+{
+  "name": "agentdesk-bridge",
+  "version": "0.1.0",
+  "description": "Local bridge server for AgentDesk — connects any AI coding agent to the web UI",
+  "main": "src/index.js",
+  "bin": {
+    "agentdesk": "./bin/agentdesk.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.16.0",
+    "simple-git": "^3.23.0",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1",
+    "node-pty": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
